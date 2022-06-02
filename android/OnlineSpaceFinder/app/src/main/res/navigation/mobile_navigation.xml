@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <!-- Bottom Navigation Menu -->
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.onlinespacefinder.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.example.onlinespacefinder.ui.favorites.FavoritesFragment"
+        android:label="@string/title_favorites"
+        tools:layout="@layout/fragment_favorites" />
+
+    <fragment
+        android:id="@+id/navigation_feedback"
+        android:name="com.example.onlinespacefinder.ui.feedbacks.FeedbackFragment"
+        android:label="@string/title_my_feedback"
+        tools:layout="@layout/fragment_feedbacks" />
+
+    <!-- Side Navigation Menu -->
+    <fragment
+        android:id="@+id/nav_reservation"
+        android:name="com.example.onlinespacefinder.ui.reservation.ReservationFragment"
+        android:label="@string/menu_reservation"
+        tools:layout="@layout/fragment_reservation" />
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.example.onlinespacefinder.ui.history.HistoryFragment"
+        android:label="@string/menu_history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/nav_password"
+        android:name="com.example.onlinespacefinder.ui.password.PasswordFragment"
+        android:label="@string/title_password"
+        tools:layout="@layout/fragment_password" />
+</navigation>
